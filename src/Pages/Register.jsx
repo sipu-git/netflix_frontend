@@ -41,7 +41,7 @@ const Register = () => {
      if(file){
       formData.append("profile",file)
      }
-      const response = await axios.post("https://netflix-clone-nccc.onrender.com/api/auth/register", formData);
+      const response = await axios.post("https://netflix-backend-3-u4wj.onrender.com/api/auth/register", formData);
       setMessage(response.data.message);
       console.log(response.data.data);
       setUserInfo({ fullname:'',email: '', phone: '',password:'' });

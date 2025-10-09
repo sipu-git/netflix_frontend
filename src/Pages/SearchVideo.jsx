@@ -29,7 +29,7 @@ const SearchVideo = () => {
       }
 
       const response = await axios.get(
-        `https://netflix-clone-nccc.onrender.com/api/upload/searchVideo?title=${searchInput}`,
+        `https://netflix-backend-3-u4wj.onrender.com/api/upload/searchVideo?title=${searchInput}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

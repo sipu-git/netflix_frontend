@@ -18,7 +18,7 @@ const VerifyOtp = () => {
        setLoading(true)
       setMessage('')
         try {
-            const response = await axios.post("https://netflix-clone-nccc.onrender.com/api/auth/verifyOtp",{
+            const response = await axios.post("https://netflix-backend-3-u4wj.onrender.com/api/auth/verifyOtp",{
                email,otp
             })
             setMessage(response.data.message)
