@@ -14,7 +14,7 @@ const Banner = () => {
   const handleForm = async (e)=>{
     try {
       e.preventDefault()
-      const response= await axios.post("https://netflix-backend-3-u4wj.onrender.com/api/auth/sendOtp",{
+      const response= await axios.post("https://netflix-backend-lvd2.onrender.com/api/auth/sendOtp",{
         email
       });
       toast.success(response.data.message)

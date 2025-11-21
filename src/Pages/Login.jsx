@@ -25,7 +25,7 @@ const Login = () => {
     setMessage('');
     setLoading(true)
     try {
-      const response = await axios.post("https://netflix-backend-3-u4wj.onrender.com/api/auth/login", userInfo);
+      const response = await axios.post("https://netflix-backend-lvd2.onrender.com/api/auth/login", userInfo);
       setMessage(response.data.message);
       const { token, data } = response.data;
       localStorage.setItem("authenticateUser", token);

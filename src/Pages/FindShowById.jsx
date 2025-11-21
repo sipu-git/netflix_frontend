@@ -15,7 +15,7 @@ const FindShowById = () => {
           alert("No token found. Please log in again.");
           return;
         }
-        const response = await axios.get(`https://netflix-backend-3-u4wj.onrender.com/api/upload/getVideo/${id}`,{
+        const response = await axios.get(`https://netflix-backend-lvd2.onrender.com/api/upload/getVideo/${id}`,{
            headers: {
             Authorization: `Bearer ${token}`
           } 
